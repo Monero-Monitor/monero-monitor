@@ -13,15 +13,17 @@ more information or see http://opensource.org/licenses/MIT.
 
 This Chrome extension allows the user to easily monitor basic Monero network
 statistics, including network hashrate; the most recent block, time, and reward;
-network difficulty; and total coin supply.  Additionally, this extension
-provides easy access to the current BTC-XMR and UCD-XMR exchange rates on the
-Poloniex exchange.
+network difficulty; and total coin supply.  This extension also provides easy access
+to the current XMR exchange rates on the Poloniex exchange. Also, the extension
+provides easy access to the current top posts on the /r/monero subreddit. Users can
+enable an additional tab to monitor mining status on a number of XMR mining pools.
 
 
 ## External Public APIs Used
 
 * [ChainRadar API](http://chainradar.com/api#)
 * [Poloniex API](https://poloniex.com/support/api)
+* Various mining pools using the [node-cryptonote-pool](https://github.com/zone117x/node-cryptonote-pool) source.
 
 
 ## Contributing
