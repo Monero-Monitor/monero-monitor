@@ -1,0 +1,234 @@
+/* Monero Monitor Stylesheet
+   See LICENSE for use. */
+
+/* General Settings */
+html, body { width: 450px; min-height: 375px; padding: 0px; }
+html {
+    background: #FAFAFA;
+}
+body {
+  margin: 0px;
+  color: #505050;
+  font-family: sans-serif;
+  font-size: 16pt;
+}
+.main-area {
+  width: 100%;
+}
+h1 {
+  font-size: 26pt;
+  margin: 2px 0px;
+  padding: 5px 5px 0px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+.main-area p {
+  padding: 5px 15px;
+  width:auto;
+}
+h2 {
+  margin: 10px 24px 5px;
+  width: auto;
+  font-size: 22pt;
+  font-weight: bold;
+  text-align: center;
+  color: #313131;
+}
+h3 { margin: 10px 0px 5px 5px; font-size: 18pt; padding: 0px; }
+h4 { margin: 8px 0px 2px; font-size: 16pt; font-weight: bold; }
+a:link, a:visited, a:hover, a:active {
+  color: #888888; text-decoration: none; outline: 0;
+}
+
+/* Header */
+button#settings-menu {
+  display: block;
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  background-color:#313131;
+  border: 0px;
+  outline: 0px;
+}
+button#settings-menu::before {
+  content: attr(data-tip);
+  font-size: 10pt;
+  position: absolute;
+  z-index: 999;
+  white-space: nowrap;
+  top: -200px;
+  right: 20px;
+  width: auto;
+  margin-left: 0px;
+  background:#FAFAFA;
+  border: 1px solid #FC6622;
+  border-radius: 4px;
+  color: #FC6622;
+  padding: 0px 7px;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+  height: 24px;
+  line-height: 24px;
+}
+button#settings-menu:hover::before { opacity: 1; top: 20px; transition-delay: 0.75s;}
+img#settings-icon { height: 24px; width: 24px; content:url("/data/img/ic_settings_applications_grey600_48dp.png"); }
+img#settings-icon:hover { content:url("/data/img/ic_settings_applications_white_48dp.png"); }
+
+div#logo-header {
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0px 0px;
+  background-color: #313131;
+  color: #FAFAFA;
+  border: 0px solid #505050;
+  border-bottom-width:5px;
+  margin: 0px;
+}
+img#monero-logo {
+  height: 50px;
+  vertical-align: middle;
+  background: #FAFAFA;
+  padding:5px;
+  border-radius:30px;
+}
+ul#navbar {
+  width: 100%;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+li.nav-button {
+  width: 70px;
+  background-color: #313131;
+  padding: 6px 0px;
+  margin: 0px;
+  margin-bottom: 1px;
+  border-collapse: collapse;
+  border:0px solid #505050;
+  border-right-width: 1px;
+  display:inline;
+  float: left;
+  cursor:pointer;
+  color: #FAFAFA;
+  font-size:12px;
+  text-align:center;
+  text-decoration:none;
+  outline: 0;
+}
+li.nav-button:hover, button.nav-button:active {
+	background-color: #FAFAFA;
+	color:#313131;
+}
+li.nav-button::before {
+  content: attr(data-tip);
+  font-size: 10pt;
+  position: absolute;
+  z-index: 999;
+  white-space: nowrap;
+  bottom: 200px;
+  left: 20px;
+  width: auto;
+  margin-left: 0px;
+  background:#FAFAFA;
+  border: 1px solid #FC6622;
+  border-radius: 4px;
+  color: #FC6622;
+  padding: 0px 7px;
+  text-align: left;
+  height: 24px;
+  line-height: 24px;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+li.nav-button:hover::before { opacity: 1; bottom: 30px; transition-delay: 0.75s;}
+#openMiningTabButton { display: none; }
+
+/* Network Tab: */
+div#network-tab { width: 100%; text-align: center; }
+.infotable { display: inline-block; padding: 0px; border-collapse: collapse; border: 0px; margin: 5px auto; }
+#infotop { border-top-width: 1px; }
+.infoline { height: 30px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
+.infotype { text-align: left; width: 180px; font-weight: bold; color: #313131;}
+.infofill { text-align: right; width: 220px; padding-left: 2px;}
+
+/* Markets Tab: */
+div#markets-tab { display:none; font-size: 11pt; width: 100%; text-align: center; }
+.pricetable {
+  display: inline-block;
+  padding: 0px;
+  border-collapse: collapse;
+  border: 0px;
+  margin: 5px auto;
+  text-align: center;
+  clear:all;
+  font-family: Lucida Console, Consolas, Monaco;
+}
+.priceline { height: 20px; border: 0px solid #E9E9E9; border-bottom-width: 1px;}
+.pricetype { text-align: left; width: 45px; font-weight: bold; color:#313131; }
+.pricefill  { text-align: right; width: 105px; padding-left: 2px; }
+.volumefill { text-align: right; width: 70px; padding-left: 2px; }
+.pctfill { text-align: center; width: 85px; padding-left: 2px; }
+.priceunit, .volumeunit { width: 45px; text-align: left; padding-left: 2px; }
+.mktheader { text-align: center; font-weight: bold; background-color: #E9E9E9; border: 0px; padding: 2px 0px;}
+.pricetype a:link, .pricetype a:visited { color: #356797; text-decoration: none; outline: 0; }
+.pricetype a:hover, .pricetype a:active { color: #98CD6D; text-decoration: underline; outline: 0; }
+
+/* Mining Tab: */
+div#mining-tab { display:none; width: 100%; text-align: center; }
+.miningtable { display: inline-block; padding: 0px; border-collapse: collapse; border: 0px; margin: 5px auto; }
+#m-address { font-size: 11pt; margin-top: 0px; padding: 0px; line-height: 10px; font-family: Consolas, Monaco; }
+.miningline { height: 30px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
+#miningtop { border-top-width: 1px; }
+.miningtype { text-align: left; width: 180px; font-weight: bold; color: #313131; }
+.miningfill { text-align: right; width: 220px; padding-left: 2px; }
+
+.paymentline { height: 30px; border: 0px solid #E9E9E9; border-bottom-width: 1px; font-size: 10pt; font-weight: normal;}
+.paymenttime { text-align: left; width: 178px; font-weight: bold; color: #313131; }
+.paymentamount { text-align: right; width: 128px; font-weight: bold; color: #313131; }
+.paymentmixin { text-align: right; width: 48px; font-weight: bold; color: #313131; }
+#payment-time { font-weight: bold; text-align: left; color: #505050; }
+#payment-amount,#payment-mixin { font-weight: bold; text-align: right; color: #505050; }
+
+.paymenttime a:link, .paymenttime a:visited { color: #356797; text-decoration: none; outline: 0; }
+.paymenttime a:hover, .paymenttime a:active { color: #98CD6D; text-decoration: underline; outline: 0; }
+
+
+/* Reddit Feed: */
+div#reddit-tab { display: none; color: #505050; width: 100%; }
+.reddittable { font-size: 7pt; border-collapse: collapse; border: 0px; width: 100%; }
+.redditline { width: auto; margin: 20px; height: 40px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
+.reddittable tr td { color: #313131; }
+#r-line0 td, #r-line2 td, #r-line4 td, #r-line6 td { background-color: #F5F5F5; }
+#r-line0 { border-top-width: 1px; }
+#r-stickied { color: #228822; display: none; }
+td.r-vote { width: 30px; text-align: center; border: 0px; font-size: 8pt; }
+td.r-thumb, td.r-thumb img { width: 40px; max-height: 50px; }
+td.r-thumb img { background-position: 0px -491px; }
+td.r-title { border: 0px; }
+.r-time { color: #888888; }
+.author a:link, .author a:visited { color: #356797; text-decoration: none; outline: 0; }
+.author a:hover, .author a:active { color: #98CD6D; text-decoration: underline; outline: 0; }
+.title { font-size: 9pt; }
+.title a:link, .title a:visited, .title a:hover, .title a:active { color: #313131; text-decoration: none; outline: 0; }
+#next-reddit-div { width: 100%; text-align: right; }
+#next-reddit { border: 0px solid #FAFAFA; color: #505050; background-color: #FAFAFA; text-decoration:none; outline: 0; margin-right: 5px; }
+#next-reddit:hover, #next-reddit:active { color: #888888; }
+
+/* Footer */
+#footer {
+  margin: 10px 0px 0px;
+  width:100%;
+  background-color: #313131;
+  color: #FAFAFA;
+  border: 0px solid #505050;
+  border-top-width:5px;
+  padding: 18px 0px;
+  text-align: center;
+  font-size: 7pt;
+}

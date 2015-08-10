@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monero Monitor</title>
+  <link href="/data/css/stylesheet.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="/lib/js/popup.js"></script>
+  <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/js/funcs.js"></script>
+  <script type="text/javascript" src="/lib/js/navigation.js"></script>
+  <script type="text/javascript" src="/lib/js/network.js"></script>
+  <script type="text/javascript" src="/lib/js/markets.js"></script>
+  <script type="text/javascript" src="/lib/js/reddit.js"></script>
+  <script type="text/javascript" src="/lib/js/mining.js"></script>
+</head>
+<body>
+
+  <div id="logo-header">
+    <button id="settings-menu" data-tip="Change view settings and configure extra features."><img id="settings-icon"></button>
+    <h1>Monero <img id="monero-logo" src="/data/img/615.png"> Monitor</h1>
+    <ul id="navbar">
+      <li class="nav-button" id="openNetworkTabButton" data-tip="View general Monero network information.">Network</li>
+      <li class="nav-button" id="openMarketsTabButton" data-tip="View up-to-date XMR market information.">Markets</li>
+      <li class="nav-button" id="openMiningTabButton" data-tip="View up-to-date information from your mining pool.">Mining</li>
+      <li class="nav-button" id="openRedditTabButton" data-tip="View current /r/monero top posts.">Reddit</li>
+    </ul>
+  </div>
+  
+  <div class="main-area">
+  
+    <div id="network-tab">
+      <h2> Network Statistics: </h2>
+      <table class="infotable">
+        <tr class="infoline" id="infotop"><td class="infotype">Hashrate:</td><td class="infofill"><span id="hashrate"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Last Block:</td><td class="infofill"><span id="blockheight"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Block Reward:</td><td class="infofill"><span id="blockreward"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Block Time:</td><td class="infofill"><span id="blocktime"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Difficulty:</td><td class="infofill"><span id="difficulty"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Total Supply:</td><td class="infofill"><span id="totalsupply"></span></td></tr>
+      </table>
+    </div>
+    
+    <div id="markets-tab">
+      <h2>XMR Markets:</h2>
+      <table class="pricetable">
+        <tr class="priceline"><td class="pricetype mktheader">&nbsp;</td><td class="pricefill mktheader" colspan="2">Price&nbsp;&nbsp;</td><td class="volumefill mktheader" colspan="2">Volume</td><td class="pctfill mktheader">Change</td></tr>
+        <tr class="priceline" id="btc_xmr-line"><td class="pricetype"  id="btc_xmr-link">XMR</td><td class="pricefill"><span id="btc_xmr"></span></td><td class="priceunit">BTC</td><td class="volumefill"><span id="btc_xmr_vol"></span></td><td class="volumeunit">BTC</td><td class="pctfill"><span id="btc_xmr_pct"></span></td></tr>
+        <tr class="priceline" id="usdt_xmr-line"><td class="pricetype" id="usdt_xmr-link">XMR</td><td class="pricefill"><span id="usdt_xmr"></span></td><td class="priceunit">USDT</td><td class="volumefill"><span id="usdt_xmr_vol"></span></td><td class="volumeunit">USDT</td><td class="pctfill"><span id="usdt_xmr_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_bbr-line"><td class="pricetype"  id="xmr_bbr-link">BBR</td><td class="pricefill"><span id="xmr_bbr"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_bbr_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_bbr_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_bcn-line"><td class="pricetype"  id="xmr_bcn-link">BCN</td><td class="pricefill"><span id="xmr_bcn"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_bcn_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_bcn_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_blk-line"><td class="pricetype"  id="xmr_blk-link">BLK</td><td class="pricefill"><span id="xmr_blk"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_blk_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_blk_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_btcd-line"><td class="pricetype" id="xmr_btcd-link">BTCD</td><td class="pricefill"><span id="xmr_btcd"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_btcd_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_btcd_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_dash-line"><td class="pricetype" id="xmr_dash-link">DASH</td><td class="pricefill"><span id="xmr_dash"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_dash_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_dash_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_diem-line"><td class="pricetype" id="xmr_diem-link">DIEM</td><td class="pricefill"><span id="xmr_diem"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_diem_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_diem_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_dsh-line"><td class="pricetype"  id="xmr_dsh-link">DSH</td><td class="pricefill"><span id="xmr_dsh"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_dsh_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_dsh_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_hyp-line"><td class="pricetype"  id="xmr_hyp-link">HYP</td><td class="pricefill"><span id="xmr_hyp"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_hyp_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_hyp_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_ifc-line"><td class="pricetype"  id="xmr_ifc-link">IFC</td><td class="pricefill"><span id="xmr_ifc"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_ifc_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_ifc_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_ltc-line"><td class="pricetype"  id="xmr_ltc-link">LTC</td><td class="pricefill"><span id="xmr_ltc"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_ltc_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_ltc_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_maid-line"><td class="pricetype" id="xmr_maid-link">MAID</td><td class="pricefill"><span id="xmr_maid"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_maid_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_maid_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_mnta-line"><td class="pricetype" id="xmr_mnta-link">MNTA</td><td class="pricefill"><span id="xmr_mnta"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_mnta_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_mnta_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_nxt-line"><td class="pricetype"  id="xmr_nxt-link">NXT</td><td class="pricefill"><span id="xmr_nxt"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_nxt_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_nxt_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_qora-line"><td class="pricetype" id="xmr_qora-link">QORA</td><td class="pricefill"><span id="xmr_qora"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_qora_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_qora_pct"></span></td></tr>
+        <tr class="priceline" id="xmr_xdn-line"><td class="pricetype"  id="xmr_xdn-link">XDN</td><td class="pricefill"><span id="xmr_xdn"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_xdn_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_xdn_pct"></span></td></tr>
+      </table>
+    </div>
+    
+    <div id="mining-tab">
+      <h2>Mining Stats</h2>
+      <span id="m-address"></span>
+      <table class="miningtable">
+        <tr class="miningline" id="miningtop"><td class="miningtype">Balance:</td><td class="miningfill"><span id="m-balance"></span></td></tr>
+        <tr class="miningline"><td class="miningtype">Hash Rate:</td><td class="miningfill"><span id="m-hashrate"></span></td></tr>
+        <tr class="miningline"><td class="miningtype">Last Share:</td><td class="miningfill"><span id="m-lastshare"></span></td></tr>
+        <tr class="miningline"><td class="miningtype">Total Paid:</td><td class="miningfill"><span id="m-paid"></span></td></tr>
+        <tr class="miningline"><td class="miningtype">Total Hashes:</td><td class="miningfill"><span id="m-hashes"></span></td></tr>
+      </table>
+      <h4>Recent Payments:</h4>
+      <table class="miningtable" id="paymentstable">
+      </table>
+    </div>
+    
+    <div id="reddit-tab">
+      <h3>Top posts on <a target="_blank" href="https://reddit.com/r/monero">/r/monero</a>:</h3>
+      <table class="reddittable">
+        <tr class="redditline" id="r-line0"><td class="r-vote"><span id="upvote-0"></span></td><td class="r-thumb"><img id="thumb-0" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-0"></span><span id="r-stickied"> - stickied post</span><br><span class="r-time" id="time-0"></span><span class="author" id="author-0"></span> <span id="comment-0"></span></td></tr>
+        <tr class="redditline" id="r-line1"><td class="r-vote"><span id="upvote-1"></span></td><td class="r-thumb"><img id="thumb-1" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-1"></span><br><span class="r-time" id="time-1"></span><span class="author" id="author-1"></span> <span id="comment-1"></span></td></tr>
+        <tr class="redditline" id="r-line2"><td class="r-vote"><span id="upvote-2"></span></td><td class="r-thumb"><img id="thumb-2" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-2"></span><br><span class="r-time" id="time-2"></span><span class="author" id="author-2"></span> <span id="comment-2"></span></td></tr>
+        <tr class="redditline" id="r-line3"><td class="r-vote"><span id="upvote-3"></span></td><td class="r-thumb"><img id="thumb-3" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-3"></span><br><span class="r-time" id="time-3"></span><span class="author" id="author-3"></span> <span id="comment-3"></span></td></tr>
+        <tr class="redditline" id="r-line4"><td class="r-vote"><span id="upvote-4"></span></td><td class="r-thumb"><img id="thumb-4" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-4"></span><br><span class="r-time" id="time-4"></span><span class="author" id="author-4"></span> <span id="comment-4"></span></td></tr>
+        <tr class="redditline" id="r-line5"><td class="r-vote"><span id="upvote-5"></span></td><td class="r-thumb"><img id="thumb-5" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-5"></span><br><span class="r-time" id="time-5"></span><span class="author" id="author-5"></span> <span id="comment-5"></span></td></tr>
+        <tr class="redditline" id="r-line6"><td class="r-vote"><span id="upvote-6"></span></td><td class="r-thumb"><img id="thumb-6" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-6"></span><br><span class="r-time" id="time-6"></span><span class="author" id="author-6"></span> <span id="comment-6"></span></td></tr>
+        <tr class="redditline" id="r-line7"><td class="r-vote"><span id="upvote-7"></span></td><td class="r-thumb"><img id="thumb-7" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-7"></span><br><span class="r-time" id="time-7"></span><span class="author" id="author-7"></span> <span id="comment-7"></span></td></tr>
+        <tr class="redditline" id="r-line8"><td class="r-vote"><span id="upvote-8"></span></td><td class="r-thumb"><img id="thumb-8" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-8"></span><br><span class="r-time" id="time-8"></span><span class="author" id="author-8"></span> <span id="comment-8"></span></td></tr>
+        <tr class="redditline" id="r-line9"><td class="r-vote"><span id="upvote-9"></span></td><td class="r-thumb"><img id="thumb-9" src="/data/img/default.png"></td><td class="r-title"><span class="title" id="title-9"></span><br><span class="r-time" id="time-9"></span><span class="author" id="author-9"></span> <span id="comment-9"></span></td></tr>
+      </table>
+      <div id="next-reddit-div"><button id="next-reddit">more &gt;&gt;</button></div>
+    </div>
+    
+  </div>
+  
+  <div id="footer">The Monero Monitor is distributed without warranty under the <a href="/LICENSE" target="_blank">MIT License</a>.</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Monero Monitor",
+  "author": "Mike Croteau",
+  "version": "0.9",
+  "version_name": "0.9-beta",
+  "description": "A Chrome extension for monitoring the Monero network",
+  "icons": {"128":"data/img/128.png"},
+  "browser_action": {
+    "default_icon": {
+      "19": "data/img/icon19.png",
+      "38": "data/img/icon38.png"
+    },
+    "default_title": "Monero Monitor",
+    "default_popup": "data/html/popup.html"
+  },
+  "options_ui": {
+    "page": "data/html/options.html",
+    "chrome_style": true
+  },
+  "background": {
+    "scripts": [
+      "lib/js/popup.js",
+      "lib/jquery/jquery.min.js",
+      "lib/js/funcs.js",
+      "lib/js/navigation.js",
+      "lib/js/network.js",
+      "lib/js/markets.js",
+      "lib/js/reddit.js",
+      "lib/js/mining.js",
+      "lib/js/options.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "*://chainradar.com/"
+  ]
+}
