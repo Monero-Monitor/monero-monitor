@@ -19,6 +19,24 @@ provides easy access to the current top posts on the /r/monero subreddit. Users 
 enable an additional tab to monitor mining status on a number of XMR mining pools.
 
 
+## Installation
+To build this extension from source,
+
+    git clone https://github.com/micro-machine/monero-monitor
+    
+    cd monero-monitor
+    
+    ./build-chrome.sh
+    
+Install in Chrome:
+
+1) Navigate to chrome://extensions
+2) Enable Developer Mode
+3) Load Unpacked Extension located at:
+    
+    /path/to/monero-monitor/build/chrome
+
+
 ## External Public APIs Used
 
 * [ChainRadar API](http://chainradar.com/api#)
