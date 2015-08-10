@@ -31,7 +31,9 @@ To build this extension from source,
 Install in Chrome:
 
 1) Navigate to chrome://extensions
+
 2) Enable Developer Mode
+
 3) Load Unpacked Extension located at:
     
     /path/to/monero-monitor/build/chrome
