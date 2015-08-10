@@ -5,6 +5,7 @@ extras
 lib/content
 lib/js/monero-rss.js
 lib/js/mymonero.js
+.gitignore
 *.sh
 *.zip
 exclude-*.txt
