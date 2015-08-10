@@ -1,9 +1,10 @@
 {
   "manifest_version": 2,
   "name": "Monero Monitor",
+  "short_name":"XMR Monitor",
   "author": "Mike Croteau",
-  "version": "0.9",
-  "version_name": "0.9-beta",
+  "version": "0.9.1",
+  "version_name": "0.9.1-beta",
   "description": "A Chrome extension for monitoring the Monero network",
   "icons": {"128":"data/img/128.png"},
   "browser_action": {
@@ -32,7 +33,6 @@
     ]
   },
   "permissions": [
-    "tabs",
     "storage",
     "*://chainradar.com/"
   ]
