@@ -33,8 +33,8 @@
       <table class="infotable">
         <tr class="infoline" id="infotop"><td class="infotype">Hashrate:</td><td class="infofill"><span id="hashrate"></span></td></tr>
         <tr class="infoline"><td class="infotype">Last Block:</td><td class="infofill"><span id="blockheight"></span></td></tr>
-        <tr class="infoline"><td class="infotype">Block Reward:</td><td class="infofill"><span id="blockreward"></span></td></tr>
         <tr class="infoline"><td class="infotype">Block Time:</td><td class="infofill"><span id="blocktime"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Block Reward:</td><td class="infofill"><span id="blockreward"></span></td></tr>
         <tr class="infoline"><td class="infotype">Difficulty:</td><td class="infofill"><span id="difficulty"></span></td></tr>
         <tr class="infoline"><td class="infotype">Total Supply:</td><td class="infofill"><span id="totalsupply"></span></td></tr>
       </table>
@@ -42,8 +42,17 @@
     
     <div id="markets-tab">
       <h2>XMR Markets:</h2>
+      <table class="captable">
+        <tr class="capline"><td class="quotefill mktheader">Price</td><td class="capfill mktheader">Market Cap</td></tr>
+        <tr class="capline"><td class="quotefill"><span id="USDtoXMR"></span> USD</td><td class="capfill rightcap"><span id="CapUSD"></span> USD</td></tr>
+        <tr class="capline"><td class="quotefill"><span id="EURtoXMR"></span> EUR</td><td class="capfill rightcap"><span id="CapEUR"></span> EUR</td></tr>
+        <tr class="capline"><td class="quotefill"><span id="GBPtoXMR"></span> GBP</td><td class="capfill rightcap"><span id="CapGBP"></span> GBP</td></tr>
+        <tr class="capline"><td class="quotefill"><span id="BTCtoXMR"></span> BTC</td><td class="capfill rightcap"><span id="CapBTC"></span> BTC</td></tr>
+      </table>
+            
+      <h3>Poloniex Markets:</h3>
       <table class="pricetable">
-        <tr class="priceline"><td class="pricetype mktheader">&nbsp;</td><td class="pricefill mktheader" colspan="2">Price&nbsp;&nbsp;</td><td class="volumefill mktheader" colspan="2">Volume</td><td class="pctfill mktheader">Change</td></tr>
+        <tr class="priceline"><td class="pricetype mktheader">&nbsp;</td><td class="pricefill mktheader" colspan="2">Last&nbsp;&nbsp;&nbsp;</td><td class="volumefill mktheader" colspan="2">Volume</td><td class="pctfill mktheader">Change</td></tr>
         <tr class="priceline" id="btc_xmr-line"><td class="pricetype"  id="btc_xmr-link">XMR</td><td class="pricefill"><span id="btc_xmr"></span></td><td class="priceunit">BTC</td><td class="volumefill"><span id="btc_xmr_vol"></span></td><td class="volumeunit">BTC</td><td class="pctfill"><span id="btc_xmr_pct"></span></td></tr>
         <tr class="priceline" id="usdt_xmr-line"><td class="pricetype" id="usdt_xmr-link">XMR</td><td class="pricefill"><span id="usdt_xmr"></span></td><td class="priceunit">USDT</td><td class="volumefill"><span id="usdt_xmr_vol"></span></td><td class="volumeunit">USDT</td><td class="pctfill"><span id="usdt_xmr_pct"></span></td></tr>
         <tr class="priceline" id="xmr_bbr-line"><td class="pricetype"  id="xmr_bbr-link">BBR</td><td class="pricefill"><span id="xmr_bbr"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_bbr_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_bbr_pct"></span></td></tr>
