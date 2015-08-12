@@ -11,6 +11,8 @@ more information or see http://opensource.org/licenses/MIT.
 
 ## About
 
+[![Available in the Chrome Store](extras/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/monero-monitor/ojekadcfnkkihlleaafggfgbggdckpgo)
+
 This Chrome extension allows the user to easily monitor basic Monero network
 statistics, including network hashrate; the most recent block, time, and reward;
 network difficulty; and total coin supply.  This extension also provides easy access
