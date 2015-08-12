@@ -52,9 +52,20 @@ Install in Chrome:
 ## Contributing
 
 Please feel free to fork, submit pull requests or issues, or otherwise contribute
-in making this extension as useful as possible. Future releases may include
-mining pool monitoring tools or other watch-only features.
+in making this extension as useful as possible.
 
 
 If you find this extension useful, please consider donating to the developer:  
 _49VtwYXDbbh7hq57wwkLH36x4D6XV6Tr2P93ANnBi9qFGyYZbx8SXWPUHC9V1o7N41b4c3WJ1kubkffRfPTPfMuB8QUqFD5_
+
+## Screenshots
+
+![Overview](extras/screenshots/01-network.png)
+
+![Markets](extras/screenshots/02-markets.png)
+
+![Mining](extras/screenshots/03-mining.png)
+
+![reddit](extras/screenshots/04-reddit.png)
+
+![Options](extras/screenshots/05-options.png)
