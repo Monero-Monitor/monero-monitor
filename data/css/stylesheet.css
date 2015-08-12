@@ -205,6 +205,7 @@ div#markets-tab { display:none; font-size: 11pt; width: 100%; text-align: center
 
 /* Mining Tab: */
 div#mining-tab { display:none; width: 100%; text-align: center; }
+#miningaddress { width: 100%; height: 44px; }
 .miningtable { display: inline-block; padding: 0px; border-collapse: collapse; border: 0px; margin: 5px auto; }
 #m-address { font-size: 11pt; margin-top: 0px; padding: 0px; line-height: 10px; font-family: Consolas, Monaco; }
 .miningline { height: 30px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
