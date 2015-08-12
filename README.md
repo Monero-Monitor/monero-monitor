@@ -41,9 +41,9 @@ Install in Chrome:
 
 ## External Public APIs Used
 
-* [ChainRadar API](http://chainradar.com/api#)
-* [CoinDesk API](https://coindesk.com/api)
-* [Poloniex API](https://poloniex.com/support/api)
+* Powered by [CoinDesk](http://www.coindesk.com/price/)
+* Monero network info from [ChainRadar API](http://chainradar.com/api#)
+* Market information from [Poloniex API](https://poloniex.com/support/api)
 * Various mining pools using the [node-cryptonote-pool](https://github.com/zone117x/node-cryptonote-pool) source.
 
 

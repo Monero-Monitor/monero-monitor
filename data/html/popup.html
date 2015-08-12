@@ -19,17 +19,25 @@
     <button id="settings-menu" data-tip="Change view settings and configure extra features."><img id="settings-icon"></button>
     <h1>Monero <img id="monero-logo" src="/data/img/615.png"> Monitor</h1>
     <ul id="navbar">
-      <li class="nav-button" id="openNetworkTabButton" data-tip="View general Monero network information.">Network</li>
+      <li class="nav-button" id="openNetworkTabButton" data-tip="View general Monero network information.">Overview</li>
       <li class="nav-button" id="openMarketsTabButton" data-tip="View up-to-date XMR market information.">Markets</li>
       <li class="nav-button" id="openMiningTabButton" data-tip="View up-to-date information from your mining pool.">Mining</li>
-      <li class="nav-button" id="openRedditTabButton" data-tip="View current /r/monero top posts.">Reddit</li>
+      <li class="nav-button" id="openRedditTabButton" data-tip="View current /r/monero top posts.">reddit</li>
     </ul>
   </div>
   
   <div class="main-area">
   
     <div id="network-tab">
-      <h2> Network Statistics: </h2>
+      <h3> Market Overview: </h3>
+      <table id="usdtable">
+        <tr><td id="usdquote">Price:</td><td id="usdprice">&#36;<span id="USDtoXMR"></span></td><td id="usdpriceopen"><span id="percentUSDtoXMR"></span><br>Open: &#36;<span id="openUSDtoXMR"></span></td></tr>
+      </table>
+      <table id="captable">
+        <tr class="capline"><td class="quotefill">&#128;<span id="EURtoXMR"></span></td><td class="quotefill">&#163;<span id="GBPtoXMR"></span></td><td class="quotefill"><span id="BTCtoXMR"></span> BTC</td></tr>
+      </table>
+      
+      <h3> Network Statistics: </h3>
       <table class="infotable">
         <tr class="infoline" id="infotop"><td class="infotype">Hashrate:</td><td class="infofill"><span id="hashrate"></span></td></tr>
         <tr class="infoline"><td class="infotype">Last Block:</td><td class="infofill"><span id="blockheight"></span></td></tr>
@@ -37,18 +45,11 @@
         <tr class="infoline"><td class="infotype">Block Reward:</td><td class="infofill"><span id="blockreward"></span></td></tr>
         <tr class="infoline"><td class="infotype">Difficulty:</td><td class="infofill"><span id="difficulty"></span></td></tr>
         <tr class="infoline"><td class="infotype">Total Supply:</td><td class="infofill"><span id="totalsupply"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Market Cap:</td><td class="infofill"><span id="CapUSD"></span></td></tr>
       </table>
     </div>
     
     <div id="markets-tab">
-      <h2>XMR Market Info:</h2>
-      <table class="captable">
-        <tr class="capline"><td class="quotefill mktheader">Price</td><td class="capfill mktheader">Market Cap</td></tr>
-        <tr class="capline"><td class="quotefill"><span id="USDtoXMR"></span> USD</td><td class="capfill rightcap"><span id="CapUSD"></span> USD</td></tr>
-        <tr class="capline"><td class="quotefill"><span id="EURtoXMR"></span> EUR</td><td class="capfill rightcap"><span id="CapEUR"></span> EUR</td></tr>
-        <tr class="capline"><td class="quotefill"><span id="GBPtoXMR"></span> GBP</td><td class="capfill rightcap"><span id="CapGBP"></span> GBP</td></tr>
-        <tr class="capline"><td class="quotefill"><span id="BTCtoXMR"></span> BTC</td><td class="capfill rightcap"><span id="CapBTC"></span> BTC</td></tr>
-      </table>
             
       <h3>Poloniex Markets:</h3>
       <table class="pricetable">

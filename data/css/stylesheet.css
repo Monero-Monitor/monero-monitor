@@ -158,28 +158,39 @@ div#network-tab { width: 100%; text-align: center; }
 .infofill { text-align: right; width: 220px; padding-left: 2px;}
 .infotable a:link, .infotable a:visited { color: #356797; text-decoration: none; outline: 0; }
 .infotable a:hover, .infotable a:active { color: #98CD6D; text-decoration: underline; outline: 0; }
+#captable, #usdtable {
+  padding: 0px;
+  border-collapse: collapse;
+  border: 0px;
+  text-align: center;
+  clear:all;
+  display: none;
+  color: #313131;
+}
+#usdtable { font-size: 18pt; margin: 5px auto 0px; }
+#captable { font-size: 14pt; margin: 0px auto 5px; }
+#usdquote, #capquote { width: 100px; text-align: right; padding-right: 2px; }
+#usdcap { text-align:left; padding: 0px 10px;}
+#usdprice { width: auto; text-align: left; padding: 0px 10px; }
+#usdpriceopen { width: 100px; padding-left: 2px; font-size: 9pt; text-align: left; }
+.capline { border: 0px solid #E9E9E9; border-top-width: 1px; }
+.quotefill { padding: 0px 20px; }
+#USDtoXMR, #BTCtoXMR, #EURtoXMR, #GBPtoXMR { color: #505050; }
+#CapUSD, #CapBTC, #CapEUR, #CapGBP { color: #505050; }
 
 /* Markets Tab: */
 div#markets-tab { display:none; font-size: 11pt; width: 100%; text-align: center; }
-.pricetable, .captable {
-  display: inline-block;
+.pricetable {
   padding: 0px;
   border-collapse: collapse;
   border: 0px;
   margin: 5px auto;
   text-align: center;
   clear:all;
-  font-family: Lucida Console, Consolas, Monaco;
+  display: inline-block;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
-.captable { text-align: center; color: #313131; font-size: 14pt; }
-#captop { border-top-width: 1px; }
-.capline { border: 0px solid #E9E9E9; border-bottom-width: 1px; }
-.captype { width: 60px; font-weight: bold; }
-.quotefill { width: 140px; }
-.capfill { width: 180px; padding-left: 2px;}
-.rightcap { padding-left: 38px; }
-#USDtoXMR, #BTCtoXMR, #EURtoXMR, #GBPtoXMR { color: #505050; }
-#CapUSD, #CapBTC, #CapEUR, #CapGBP { color: #505050; }
+
 .priceline { height: 20px; border: 0px solid #E9E9E9; border-bottom-width: 1px;}
 .pricetype { text-align: left; width: 45px; font-weight: bold; color:#313131; }
 .pricefill  { text-align: right; width: 105px; padding-left: 2px; }
@@ -187,6 +198,7 @@ div#markets-tab { display:none; font-size: 11pt; width: 100%; text-align: center
 .pctfill { text-align: center; width: 85px; padding-left: 2px; }
 .priceunit, .volumeunit { width: 45px; text-align: left; padding-left: 2px; }
 .mktheader { font-size: 12pt; text-align: center; font-weight: bold; background-color: #E9E9E9; border: 0px; padding: 2px 0px;}
+.rightcap .mktheader { padding-left: 38px; }
 .pricetype a:link, .pricetype a:visited { color: #356797; text-decoration: none; outline: 0; }
 .pricetype a:hover, .pricetype a:active { color: #98CD6D; text-decoration: underline; outline: 0; }
 
