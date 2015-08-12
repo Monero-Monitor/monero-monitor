@@ -151,6 +151,7 @@ li.nav-button:hover::before { opacity: 1; bottom: 30px; transition-delay: 0.75s;
 
 /* Network Tab: */
 div#network-tab { width: 100%; text-align: center; }
+#marketoverview { width: 100%; height: 80px; }
 .infotable { display: inline-block; padding: 0px; border-collapse: collapse; border: 0px; margin: 5px auto; }
 #infotop { border-top-width: 1px; }
 .infoline { height: 30px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }

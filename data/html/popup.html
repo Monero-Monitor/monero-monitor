@@ -30,22 +30,24 @@
   
     <div id="network-tab">
       <h3> Market Overview: </h3>
-      <table id="usdtable">
-        <tr><td id="usdquote">Price:</td><td id="usdprice">&#36;<span id="USDtoXMR"></span></td><td id="usdpriceopen"><span id="percentUSDtoXMR"></span><br>Open: &#36;<span id="openUSDtoXMR"></span></td></tr>
-      </table>
-      <table id="captable">
-        <tr class="capline"><td class="quotefill">&#128;<span id="EURtoXMR"></span></td><td class="quotefill">&#163;<span id="GBPtoXMR"></span></td><td class="quotefill"><span id="BTCtoXMR"></span> BTC</td></tr>
-      </table>
+      <div id="marketoverview">
+        <table id="usdtable">
+          <tr><td id="usdquote">Price:</td><td id="usdprice">&#36;<span id="USDtoXMR"></span></td><td id="usdpriceopen"><span id="percentUSDtoXMR"></span><br>Open: &#36;<span id="openUSDtoXMR"></span></td></tr>
+        </table>
+        <table id="captable">
+          <tr class="capline"><td class="quotefill">&#128;<span id="EURtoXMR"></span></td><td class="quotefill">&#163;<span id="GBPtoXMR"></span></td><td class="quotefill"><span id="BTCtoXMR"></span> BTC</td></tr>
+        </table>
+      </div>
       
       <h3> Network Statistics: </h3>
       <table class="infotable">
-        <tr class="infoline" id="infotop"><td class="infotype">Hashrate:</td><td class="infofill"><span id="hashrate"></span></td></tr>
+        <tr class="infoline" id="infotop"><td class="infotype">Total Supply:</td><td class="infofill"><span id="totalsupply"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Market Cap:</td><td class="infofill"><span id="CapUSD"></span></td></tr>
+        <tr class="infoline"><td class="infotype">Hashrate:</td><td class="infofill"><span id="hashrate"></span></td></tr>
         <tr class="infoline"><td class="infotype">Last Block:</td><td class="infofill"><span id="blockheight"></span></td></tr>
         <tr class="infoline"><td class="infotype">Block Time:</td><td class="infofill"><span id="blocktime"></span></td></tr>
         <tr class="infoline"><td class="infotype">Block Reward:</td><td class="infofill"><span id="blockreward"></span></td></tr>
         <tr class="infoline"><td class="infotype">Difficulty:</td><td class="infofill"><span id="difficulty"></span></td></tr>
-        <tr class="infoline"><td class="infotype">Total Supply:</td><td class="infofill"><span id="totalsupply"></span></td></tr>
-        <tr class="infoline"><td class="infotype">Market Cap:</td><td class="infofill"><span id="CapUSD"></span></td></tr>
       </table>
     </div>
     
