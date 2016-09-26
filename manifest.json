@@ -33,7 +33,6 @@
     ]
   },
   "permissions": [
-    "storage",
-    "*://chainradar.com/"
+    "storage"
   ]
 }
