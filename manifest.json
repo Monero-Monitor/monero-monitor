@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Monero Monitor",
   "short_name":"XMR Monitor",
-  "author": "Mike Croteau",
+  "author": "bigreddmachine",
   "version": "1.0.1",
   "version_name": "1.0.1",
   "description": "A Chrome extension for monitoring the Monero network",
