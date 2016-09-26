@@ -24,7 +24,7 @@ enable an additional tab to monitor mining status on a number of XMR mining pool
 ## Installation
 To build this extension from source,
 
-    git clone https://github.com/micro-machine/monero-monitor
+    git clone https://github.com/monero-monitor/monero-monitor
 
     cd monero-monitor
 
