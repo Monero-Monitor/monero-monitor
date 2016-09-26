@@ -210,8 +210,8 @@ div#mining-tab { display:none; width: 100%; text-align: center; }
 #m-address { font-size: 11pt; margin-top: 0px; padding: 0px; line-height: 10px; font-family: Consolas, Monaco; }
 .miningline { height: 30px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
 #miningtop { border-top-width: 1px; }
-.miningtype { text-align: left; width: 180px; font-weight: bold; color: #313131; }
-.miningfill { text-align: right; width: 220px; padding-left: 2px; }
+.miningtype { text-align: left; width: 160px; font-weight: bold; color: #313131; }
+.miningfill { text-align: right; width: 240px; padding-left: 2px; }
 
 .paymentline { height: 30px; border: 0px solid #E9E9E9; border-bottom-width: 1px; font-size: 10pt; font-weight: normal;}
 .paymenttime { text-align: left; width: 178px; font-weight: bold; color: #313131; }
