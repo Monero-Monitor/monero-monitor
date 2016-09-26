@@ -25,9 +25,9 @@
       <li class="nav-button" id="openRedditTabButton" data-tip="View current /r/monero top posts.">reddit</li>
     </ul>
   </div>
-  
+
   <div class="main-area">
-  
+
     <div id="network-tab">
       <h3> Market Overview: </h3>
       <div id="marketoverview">
@@ -38,7 +38,7 @@
           <tr class="capline"><td class="quotefill">&#128;<span id="EURtoXMR"></span></td><td class="quotefill">&#163;<span id="GBPtoXMR"></span></td><td class="quotefill"><span id="BTCtoXMR"></span> BTC</td></tr>
         </table>
       </div>
-      
+
       <h3> Network Statistics: </h3>
       <table class="infotable">
         <tr class="infoline" id="infotop"><td class="infotype">Total Supply:</td><td class="infofill"><span id="totalsupply"></span></td></tr>
@@ -50,9 +50,9 @@
         <tr class="infoline"><td class="infotype">Difficulty:</td><td class="infofill"><span id="difficulty"></span></td></tr>
       </table>
     </div>
-    
+
     <div id="markets-tab">
-            
+
       <h3>Poloniex Markets:</h3>
       <table class="pricetable">
         <tr class="priceline"><td class="pricetype mktheader">&nbsp;</td><td class="pricefill mktheader" colspan="2">Last&nbsp;&nbsp;&nbsp;</td><td class="volumefill mktheader" colspan="2">Volume</td><td class="pctfill mktheader">Change</td></tr>
@@ -64,18 +64,14 @@
         <tr class="priceline" id="xmr_btcd-line"><td class="pricetype" id="xmr_btcd-link">BTCD</td><td class="pricefill"><span id="xmr_btcd"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_btcd_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_btcd_pct"></span></td></tr>
         <tr class="priceline" id="xmr_dash-line"><td class="pricetype" id="xmr_dash-link">DASH</td><td class="pricefill"><span id="xmr_dash"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_dash_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_dash_pct"></span></td></tr>
         <tr class="priceline" id="xmr_diem-line"><td class="pricetype" id="xmr_diem-link">DIEM</td><td class="pricefill"><span id="xmr_diem"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_diem_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_diem_pct"></span></td></tr>
-        <tr class="priceline" id="xmr_dsh-line"><td class="pricetype"  id="xmr_dsh-link">DSH</td><td class="pricefill"><span id="xmr_dsh"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_dsh_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_dsh_pct"></span></td></tr>
-        <tr class="priceline" id="xmr_hyp-line"><td class="pricetype"  id="xmr_hyp-link">HYP</td><td class="pricefill"><span id="xmr_hyp"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_hyp_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_hyp_pct"></span></td></tr>
-        <tr class="priceline" id="xmr_ifc-line"><td class="pricetype"  id="xmr_ifc-link">IFC</td><td class="pricefill"><span id="xmr_ifc"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_ifc_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_ifc_pct"></span></td></tr>
         <tr class="priceline" id="xmr_ltc-line"><td class="pricetype"  id="xmr_ltc-link">LTC</td><td class="pricefill"><span id="xmr_ltc"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_ltc_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_ltc_pct"></span></td></tr>
         <tr class="priceline" id="xmr_maid-line"><td class="pricetype" id="xmr_maid-link">MAID</td><td class="pricefill"><span id="xmr_maid"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_maid_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_maid_pct"></span></td></tr>
-        <tr class="priceline" id="xmr_mnta-line"><td class="pricetype" id="xmr_mnta-link">MNTA</td><td class="pricefill"><span id="xmr_mnta"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_mnta_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_mnta_pct"></span></td></tr>
         <tr class="priceline" id="xmr_nxt-line"><td class="pricetype"  id="xmr_nxt-link">NXT</td><td class="pricefill"><span id="xmr_nxt"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_nxt_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_nxt_pct"></span></td></tr>
         <tr class="priceline" id="xmr_qora-line"><td class="pricetype" id="xmr_qora-link">QORA</td><td class="pricefill"><span id="xmr_qora"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_qora_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_qora_pct"></span></td></tr>
         <tr class="priceline" id="xmr_xdn-line"><td class="pricetype"  id="xmr_xdn-link">XDN</td><td class="pricefill"><span id="xmr_xdn"></span></td><td class="priceunit">XMR</td><td class="volumefill"><span id="xmr_xdn_vol"></span></td><td class="volumeunit">XMR</td><td class="pctfill"><span id="xmr_xdn_pct"></span></td></tr>
       </table>
     </div>
-    
+
     <div id="mining-tab">
       <h2>Mining Stats</h2>
       <div id="miningaddress">
@@ -92,7 +88,7 @@
       <table class="miningtable" id="paymentstable">
       </table>
     </div>
-    
+
     <div id="reddit-tab">
       <h3>Top posts on <a target="_blank" href="https://reddit.com/r/monero">/r/monero</a>:</h3>
       <table class="reddittable">
@@ -109,9 +105,9 @@
       </table>
       <div id="next-reddit-div"><button id="next-reddit">more &gt;&gt;</button></div>
     </div>
-    
+
   </div>
-  
+
   <div id="footer">The Monero Monitor is distributed without warranty under the <a href="/LICENSE" target="_blank">MIT License</a>.</div>
 
 </body>
