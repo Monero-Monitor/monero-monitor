@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "\nSyncing chrome directory...\n===========================\n"
+mkdir -p build/chrome
 rsync -a --exclude-from=./exclude-chrome.txt . build/chrome/.
 
 echo "\nZipping chrome extension...\n===========================\n"

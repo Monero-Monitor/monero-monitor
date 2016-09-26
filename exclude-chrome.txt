@@ -4,6 +4,7 @@ data/img/ic_settings_grey600_36dp.png
 extras
 lib/content
 .gitignore
+.git
 *.sh
 *.zip
 exclude-*.txt
