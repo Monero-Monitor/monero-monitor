@@ -1,6 +1,6 @@
 # Monero Monitor Extension
 
-Copyright (c) 2015 Mike Croteau.
+Copyright (c) 2015 bigreddmachine.
 
 
 ## License
