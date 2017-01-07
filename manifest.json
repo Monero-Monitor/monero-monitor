@@ -3,8 +3,8 @@
   "name": "Monero Monitor",
   "short_name":"XMR Monitor",
   "author": "bigreddmachine",
-  "version": "1.2.0",
-  "version_name": "1.2.0",
+  "version": "1.2.1",
+  "version_name": "1.2.1",
   "description": "A Chrome extension for monitoring the Monero network",
   "icons": {"128":"data/img/128.png"},
   "browser_action": {
