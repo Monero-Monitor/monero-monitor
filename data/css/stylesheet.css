@@ -229,9 +229,7 @@ div#reddit-tab { display: none; color: #505050; width: 100%; }
 .reddittable { font-size: 7pt; border-collapse: collapse; border: 0px; width: 100%; }
 .redditline { width: auto; margin: 20px; height: 40px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
 .reddittable tr td { color: #313131; }
-#r-line0  td, #r-line2  td, #r-line4  td, #r-line6  td, #r-line8  td,
-#r-line10 td, #r-line12 td, #r-line14 td, #r-line16 td, #r-line18 td,
-#r-line20 td, #r-line22 td, #r-line24 td, #r-line26 td, #r-line28 td { background-color: #F5F5F5; }
+.reddittable tr:nth-child(odd) { background-color: #F5F5F5; }
 #r-line0 { border-top-width: 1px; }
 #r-stickied { color: #228822; display: none; }
 td.r-vote { width: 30px; text-align: center; border: 0px; font-size: 8pt; }
@@ -252,9 +250,7 @@ div#se-tab { display: none; color: #505050; width: 100%; }
 .setable { font-size: 8pt; border-collapse: collapse; border: 0px; width: auto; margin: 0 4px; }
 .seline { width: auto; margin: 20px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
 .setable tr td { color: #313131; }
-#se-line0  td, #se-line2  td, #se-line4  td, #se-line6  td, #se-line8  td,
-#se-line10 td, #se-line12 td, #se-line14 td, #se-line16 td, #se-line18 td,
-#se-line20 td, #se-line22 td, #se-line24 td, #se-line26 td, #se-line28 td { background-color: #F5F5F5; }
+.setable tr:nth-child(odd) { background-color: #F5F5F5; }
 #se-line0 { border-top-width: 1px; }
 td.se-vote { width: 30px; text-align: center; border: 0px; }
 td.se-answer { width: 30px; text-align: center; border: 0px; }
