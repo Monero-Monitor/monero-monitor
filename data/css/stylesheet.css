@@ -229,7 +229,9 @@ div#reddit-tab { display: none; color: #505050; width: 100%; }
 .reddittable { font-size: 7pt; border-collapse: collapse; border: 0px; width: 100%; }
 .redditline { width: auto; margin: 20px; height: 40px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
 .reddittable tr td { color: #313131; }
-#r-line0 td, #r-line2 td, #r-line4 td, #r-line6 td { background-color: #F5F5F5; }
+#r-line0  td, #r-line2  td, #r-line4  td, #r-line6  td, #r-line8  td,
+#r-line10 td, #r-line12 td, #r-line14 td, #r-line16 td, #r-line18 td,
+#r-line20 td, #r-line22 td, #r-line24 td, #r-line26 td, #r-line28 td { background-color: #F5F5F5; }
 #r-line0 { border-top-width: 1px; }
 #r-stickied { color: #228822; display: none; }
 td.r-vote { width: 30px; text-align: center; border: 0px; font-size: 8pt; }
@@ -244,6 +246,30 @@ td.r-title { border: 0px; }
 #next-reddit-div { width: 100%; text-align: right; }
 #next-reddit { border: 0px solid #FAFAFA; color: #505050; background-color: #FAFAFA; text-decoration:none; outline: 0; margin-right: 5px; }
 #next-reddit:hover, #next-reddit:active { color: #888888; }
+
+/* StackExchange Feed: */
+div#se-tab { display: none; color: #505050; width: 100%; }
+.setable { font-size: 7pt; border-collapse: collapse; border: 0px; width: 100%; }
+.seline { width: auto; margin: 20px; height: 40px; border: 0px solid #E9E9E9; border-bottom-width: 1px; }
+.setable tr td { color: #313131; }
+#se-line0  td, #se-line2  td, #se-line4  td, #se-line6  td, #se-line8  td,
+#se-line10 td, #se-line12 td, #se-line14 td, #se-line16 td, #se-line18 td,
+#se-line20 td, #se-line22 td, #se-line24 td, #se-line26 td, #se-line28 td { background-color: #F5F5F5; }
+#se-line0 { border-top-width: 1px; }
+td.se-vote { width: 30px; text-align: center; border: 0px; font-size: 8pt; }
+td.se-answer { width: 30px; text-align: center; border: 0px; font-size: 8pt; }
+td.se-view { width: 30px; text-align: center; border: 0px; font-size: 8pt; }
+.se-bounty { color: white; background-color: #0077dd; padding: 1px 3px 1px 3px; margin-right: 3px; border-radius: 2px;}
+td.se-title { border: 0px; }
+.se-tag { font-size: 8pt; color: #556E77; background-color: #F7FDFF; border: 1px solid #BFD4DC; border-radius: 10px; padding: 1px 3px 1px 3px; margin-right: 3px; }
+.se-time-author { color: #888888; text-align: right; }
+.se-time-author a:link, .se-time-author a:visited { color: #356797; text-decoration: none; outline: 0; }
+.se-time-author a:hover, .se-time-author a:active { color: #98CD6D; text-decoration: underline; outline: 0; }
+.se-title { font-size: 9pt; }
+.se-title a:link, .se-title a:visited, .se-title a:hover, .se-title a:active { color: #313131; text-decoration: none; outline: 0; }
+#next-se-div { width: 100%; text-align: right; }
+#next-se { border: 0px solid #FAFAFA; color: #505050; background-color: #FAFAFA; text-decoration:none; outline: 0; margin-right: 5px; }
+#next-se:hover, #next-se:active { color: #888888; }
 
 /* Footer */
 #footer {
