@@ -34,6 +34,7 @@
   },
   "permissions": [
     "storage",
-    "https://api.coindesk.com/"
+    "https://api.coindesk.com/",
+    "http://moneroblocks.info/api/"
   ]
 }
