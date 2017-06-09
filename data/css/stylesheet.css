@@ -279,3 +279,34 @@ td.se-post { border: 0px; padding: 2px 0; }
   text-align: center;
   font-size: 7pt;
 }
+
+/* Podcast List */
+div#podcast-tab {
+  display: none; color: #505050; width: 100%;
+}
+div#podcast-list {
+  width: auto;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 12pt;
+}
+div.podcast-episode {
+  width: auto;
+  margin: 0;
+  padding: 10px;
+  border: 0 solid #E0E0E0;
+  border-bottom-width: 1px;
+  min-height: 80px;
+}
+div.podcast-episode:first-of-type {
+  border-top-width: 1px;
+}
+div.episode-image { width: 80px; height: 80px; display: inline-block; vertical-align: top; }
+div.episode-image img { width: 100%; }
+div.episode-description {
+  width: calc( 100% - 90px );
+  margin: 0;
+  padding: 0 0 0 10px;
+  display: inline-block;
+  vertical-align: top;
+}

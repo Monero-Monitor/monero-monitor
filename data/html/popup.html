@@ -13,6 +13,7 @@
   <script type="text/javascript" src="/lib/js/reddit.js"></script>
   <script type="text/javascript" src="/lib/js/se.js"></script>
   <script type="text/javascript" src="/lib/js/mining.js"></script>
+  <script type="text/javascript" src="/lib/js/podcast.js"></script>
 </head>
 <body>
 
@@ -25,6 +26,7 @@
       <li class="nav-button" id="openMiningTabButton" data-tip="View up-to-date information from your mining pool.">Mining</li>
       <li class="nav-button" id="openRedditTabButton" data-tip="View current /r/monero top posts.">reddit</li>
       <li class="nav-button" id="openSETabButton" data-tip="View current Monero StackExchange posts.">SE</li>
+      <li class="nav-button" id="openPodcastTabButton" data-tip="View Monero Monitor podcast episodes.">Podcast</li>
     </ul>
   </div>
 
@@ -162,6 +164,14 @@
         <tr class="seline" id="se-line29"><td class="se-vote"><span id="se-vote-29"></span></td><td class="se-answer"><div id="se-answer-29"></div></td><td class="se-view"><span id="se-view-29"></span></td><td class="se-post"><div class="se-bounty-title"><span class="se-bounty" id="se-bounty29" style="display: none;"></span><span class="se-title" id="se-title-29"></span></div><div class="se-tags" id="se-tag-29"></div><div class="se-time-author" id="se-time-author-29"></div></td></tr>
       </table>
       <div id="next-se-div"><button id="next-se">more &gt;&gt;</button></div>
+    </div>
+
+    <div id="podcast-tab">
+      <h3 id="podcast-header">Podcast Episodes</h3>
+      <div id="podcast-list"></div>
+      <p style="text-align: center; font-size: 12pt;">
+        Episodes and more available on <a href="https://moneromonitor.com">moneromonitor.com</a>.
+      </p>
     </div>
 
   </div>
